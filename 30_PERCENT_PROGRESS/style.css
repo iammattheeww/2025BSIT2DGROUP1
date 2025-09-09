@@ -1,0 +1,244 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* BODY */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDFEE9;
+}
+
+/* CONTAINER */
+.container {
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SIDE NAVBAR */
+.sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100vh;
+    background: #0E0E52;
+    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    align-items: flex-start;
+}
+
+.sidebar #logo a img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.sidebar-nav ul,
+.sidebar-bottom ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-nav ul li,
+.sidebar-bottom ul li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav ul li a,
+.sidebar-bottom ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-bottom ul li a:hover {
+    background-color: #192bc2;
+    border-radius: 2px;
+}
+
+.sidebar-nav ul li a i,
+.sidebar-bottom ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar-nav ul li a h3,
+.sidebar-bottom ul li a h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    width: 100%;
+}
+
+.sidebar-divider {
+    margin-bottom: 20px;
+}
+
+/* HERO IMAGE */
+#hero {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay for readability */
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+/* HERO CAPTION */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding-left: 60px;
+    z-index: 2;
+}
+
+.header-content {
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.header-content h2 {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#book-now {
+    background-color: #0057b7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#book-now:hover {
+    background-color: #0046a5;
+}
+
+/* TRIPS SECTION */
+.trips-section {
+    padding: 40px;
+    background-color: #FDFEE9;
+}
+
+.trips-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #192bc2;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.trip-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trip-card {
+   flex: 0 1 300px;
+   padding: 15px;
+   height: 350px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.trip-card img {
+    width: 200px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto 10px auto;
+}
+
+.trip-card h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.trip-card p {
+    font-size: 15px;
+    color: #9e9e9e;
+    font-weight: 500;
+}
+
+.trip-card a {
+    background-color: #0057b7;
+    color: white;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.trip-card a:hover {
+    background-color: #0046a5;
+}
